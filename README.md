@@ -83,7 +83,7 @@ python trnda-cli.py sample1.jpg --client "jan@acme.com"  # Downloads from S3 + s
 **Email Notifications:**
 - Detects email in `--client` parameter
 - Sends PDF report via AWS SES
-- FROM: trnda@ai.aws.thetrasklab.com
+- FROM: trnda@yourdomain.com
 - Requires SES email verification (sender and recipient emails must be verified in SES)
 
 ### S3 Integration
