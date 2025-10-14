@@ -24,7 +24,6 @@ from strands.tools.mcp import MCPClient
 
 # S3 Configuration
 # Can be overridden via S3_BUCKET environment variable
-DEFAULT_BUCKET = os.environ.get('S3_BUCKET', 'your-trnda-s3-bucket')
 DEFAULT_REGION = "eu-central-1"
 
 os.environ['BYPASS_TOOL_CONSENT'] = 'true'
@@ -499,7 +498,7 @@ def convert_with_pandoc(input_file: str, output_format: str) -> str:
 def build_system_prompt():
     """Simple system prompt - max 3-4 pages output."""
     # Use consistent height-based sizing for all images (no adaptive sizing)
-    input_image_size = r"height=0.7\textheight,keepaspectratio"
+    input_image_size = r"height=0.5\textheight,keepaspectratio"
     
     return rf"""You are an AWS Solutions Architect. Create a CONCISE report (MAX 3-4 PAGES).
 
