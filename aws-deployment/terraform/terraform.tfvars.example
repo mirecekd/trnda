@@ -1,0 +1,28 @@
+# TRNDA Terraform Configuration Example
+# Copy this file to terraform.tfvars and fill in your values
+
+# AWS Region
+aws_region = "eu-central-1"
+
+# Project configuration
+project_name = "trnda"
+environment  = "prod"
+
+# S3 Bucket (must be globally unique!)
+bucket_name = "your-company-trnda-diagrams"
+
+# Network Configuration
+# You need existing VPC and subnets
+vpc_id     = "vpc-xxxxxxxxxxxxx"
+subnet_ids = ["subnet-xxxxxxxxxxxxx", "subnet-yyyyyyyyyyyyy"]
+
+# ECS Task Configuration
+task_cpu    = "2048"  # 2 vCPU
+task_memory = "4096"  # 4 GB RAM
+
+# Logging
+log_retention_days = 7
+
+# SES Email Configuration
+# Email address for sending TRNDA report notifications
+ses_sender_email = "trnda@yourdomain.com"

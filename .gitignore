@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+**/terraform.tfvars  # pokud obsahuje citlivé údaje (ignoruje ve všech adresářích)
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Output directories (timestamped)
+output_*/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AWS credentials (security)
+.aws/
+credentials
+config
+
+# Testing scripts (temporary, not for production)
+aws-deployment/testing-scripts/

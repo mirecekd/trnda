@@ -1,0 +1,23 @@
+# TRNDA Frontend Configuration
+# IMPORTANT: Copy this file to terraform.tfvars and set your real values
+# terraform.tfvars is in .gitignore and won't be committed to Git
+
+# AWS Configuration
+aws_region  = "eu-central-1"
+aws_profile = "your-aws-profile"  # Change this!
+
+# S3 Bucket Names - CHANGE THESE!
+frontend_bucket_name = "your-frontend-bucket-name"
+diagrams_bucket_name = "your-diagrams-bucket-name"
+
+# Upload Password - CHANGE THIS!
+upload_password = "YourSecurePassword123"
+
+# Custom Domain (Optional)
+# Uncomment and set if you want to use a custom domain like trnda.ai.aws.thetrasklab.com
+# Terraform will automatically create ACM certificate in us-east-1
+# You will need to add DNS validation records (shown in terraform output)
+# custom_domain = "trnda.ai.aws.thetrasklab.com"
+
+# If you already have an ACM certificate, you can provide it here:
+# acm_certificate_arn = "arn:aws:acm:us-east-1:ACCOUNT_ID:certificate/CERTIFICATE_ID"
