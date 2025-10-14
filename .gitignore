@@ -57,3 +57,6 @@ config
 
 # Testing scripts (temporary, not for production)
 aws-deployment/testing-scripts/
+
+# LinkedIn posts (marketing materials)
+LINKEDIN_POST.md
