@@ -1,4 +1,4 @@
-# TRNDA - Trask Ručně Nakreslí, Dokončí AWS
+# TRNDA - Trask Ručně Nakreslí, Dokončí AWSAI
 
 **TRNDA** is an AI agent for converting hand-drawn architectures into AWS designs with cost calculations.
 
